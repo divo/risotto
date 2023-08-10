@@ -14,3 +14,8 @@ body {
 ul {
     list-style-type: none;
 }
+
+.circular-image {
+  border-radius: 20%;
+  overflow: hidden;
+}
