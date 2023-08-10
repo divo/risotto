@@ -1,1 +1,4 @@
-<li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+<li>
+  <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  <p>{{ .Description | markdownify }}</p>
+</li>
