@@ -1,4 +1,12 @@
-<title>{{ with .Title }}{{ . }} &ndash; {{end}}{{ .Site.Title }}</title>
+<title>
+  {{ with .Params.head_title }}
+   {{ . }}
+  {{ else }}
+    {{ .Title }}
+    &ndash;
+  {{end}}
+  {{ .Site.Title }}
+</title>
 {{ with .Site.Params.about }}<meta name="description" content="{{ .description }}">{{ end }}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
